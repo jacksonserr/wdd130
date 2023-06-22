@@ -5,7 +5,6 @@
 }
 main {
     max-width: 840px;
-    float: right;
 }
 aside {
     margin: 20em;
@@ -16,7 +15,7 @@ aside {
     text-align: center;
 }
 aside h2 {
-    position: absolute;
+    position: relative;
     top: 47px;
     left: 150px;
 }
