@@ -13,9 +13,6 @@ aside {
     background-color: lightslategray;
     color:black;
     text-align: center;
-    position: absolute;
-    top: 47px;
-    left: 150px;
 }
 aside h2 {
     position: absolute;
@@ -25,9 +22,6 @@ aside h2 {
 aside img {
     width: 200px;
     height: auto;
-    position: absolute;
-    top: 47px;
-    left: 150px;
 }
 main img {
    width: 150px;
