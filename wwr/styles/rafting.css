@@ -1,0 +1,29 @@
+@import url(https://fonts.google.com/specimen/Rubik);
+:root {
+    --primary-color: #2023ce;
+    --secondary-color: #1f7851;
+    --accent1-color: #D5D6AA;
+    --accent2-color: #769FB6;
+
+    --heading-fonts: 'Rubik', serif;
+    --paragraph-font: 'Rubik', serif;
+    
+    --nav-background-color: #D5D6AA;
+    --nav-link-color: #9DBBAE;
+    --nav-hover-link-color: #9DBBAE;
+    --nav-hover-background-color: #769FB6;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1 {
+    position: absolute;
+}
+article {
+    position:absolute;
+}
+img {
+    float: right;
+}
