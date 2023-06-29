@@ -4,27 +4,25 @@
     box-sizing: border-box;
   }
   
-  header,
-  .grid,
-  footer {
+  header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
   }
   
   .grid {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 20rem 1fr;
     gap: 1rem;
-    align-items: start; /* Adjusted alignment to start */
+    align-items: start;
   }
   
-  .grid main {
+  main {
     grid-column: 2;
   }
   
-  .grid aside {
+  aside {
     grid-column: 1;
-    grid-row: 2; /* Adjusted grid-row to 2 */
+    grid-row: 1/3;
   }
   
   nav {
