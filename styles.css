@@ -3,13 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-main {
-    grid-column: 2/3;
-    margin: 1rem;
-}
 header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
+}
+.grid {
+    display: grid;
+    align-items: center;
+  }
+.grid main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+.grid aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 nav {
     background-color: steelblue;
@@ -29,21 +39,6 @@ nav a {
 h1 {
     border-bottom: 2px solid black;
   }
-  .grid {
-    display: grid;
-    align-items: center;
-  }
-aside {
-    margin: 20em;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
-    padding: 1em;
-    background-color: lightslategray;
-    color:black;
-    text-align: center;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
 aside h2 {
     position: relative;
     top: 47px;
