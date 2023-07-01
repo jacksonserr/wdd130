@@ -1,119 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 :root {
-  --primary-color: #2023ce;
-  --secondary-color: #1f7851;
-  --accent1-color: #D5D6AA;
-  --accent2-color: #769FB6;
-  --heading-fonts: 'Rubik', sans-serif;
-  --paragraph-font: 'Rubik', sans-serif;
-  --nav-background-color: #D5D6AA;
-  --nav-link-color: #9DBBAE;
-  --nav-hover-link-color: #9DBBAE;
-  --nav-hover-background-color: #769FB6;
+    --primary-color: #2023ce;
+    --secondary-color: #1f7851;
+    --accent1-color: #D5D6AA;
+    --accent2-color: #769FB6;
+
+    --heading-fonts: 'Rubik', sans-serif;
+    --paragraph-font: 'Rubik', sans-serif;
+
+    --nav-background-color: #D5D6AA;
+    --nav-link-color: #9DBBAE;
+    --nav-hover-link-color: #9DBBAE;
+    --nav-hover-background-color: #769FB6;
+}
+
+body {
+    margin: 0;
+    font-family: var(--paragraph-font);
 }
 
 header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  background-color: var(--nav-background-color);
-  padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: var(--nav-background-color);
+    padding: 10px;
 }
 
-header img {
-  width: 100%;
-  height: auto;
+.logo {
+    font-family: var(--heading-fonts);
+    font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
 nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-nav a {
-  margin-left: 1rem;
-  color: var(--nav-link-color);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 main {
-  position: relative;
+    padding: 20px;
 }
 
-main .hero img {
-  width: 100%;
-  height: auto;
-  display: block;
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-main h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: var(--heading-fonts);
-  font-size: 3rem;
-  color: white;
+h1 {
+    font-family: var(--heading-fonts);
+    text-align: center;
 }
 
-main article {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+p {
+    text-align: justify;
 }
 
-section#adventures {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 2rem 0;
+section {
+    padding: 20px;
 }
 
-section#adventures figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
 }
 
-section#adventures img {
-  width: 100%;
-  height: auto;
+.adventures figure {
+    text-align: center;
 }
 
-section#adventures figcaption {
-  margin-top: 0.5rem;
-  text-align: center;
+.adventures img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: var(--secondary-color);
-  padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-footer nav.sociallinks {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
 }
 
-footer nav.sociallinks a {
-  margin-left: 0.5rem;
+.sociallinks a {
+    margin-left: 10px;
 }
-
-footer nav.sociallinks img {
-  width: 30px;
-  height: 30px;
