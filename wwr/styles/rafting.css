@@ -1,29 +1,94 @@
-@import url(https://fonts.google.com/specimen/Rubik);
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 :root {
     --primary-color: #2023ce;
     --secondary-color: #1f7851;
     --accent1-color: #D5D6AA;
     --accent2-color: #769FB6;
 
-    --heading-fonts: 'Rubik', serif;
-    --paragraph-font: 'Rubik', serif;
-    
+    --heading-fonts: 'Rubik', sans-serif;
+    --paragraph-font: 'Rubik', sans-serif;
+
     --nav-background-color: #D5D6AA;
     --nav-link-color: #9DBBAE;
     --nav-hover-link-color: #9DBBAE;
     --nav-hover-background-color: #769FB6;
 }
+
+body {
+    margin: 0;
+    font-family: var(--paragraph-font);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: var(--nav-background-color);
+    padding: 10px;
+}
+
+.logo {
+    font-family: var(--heading-fonts);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    padding: 20px;
+}
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
+
 h1 {
-    position: absolute;
+    font-family: var(--heading-fonts);
+    text-align: center;
 }
-article {
-    position:absolute;
+
+p {
+    text-align: justify;
 }
-img {
-    float: right;
+
+section {
+    padding: 20px;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.adventures figure {
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sociallinks a {
+    margin-left: 10px;
 }
