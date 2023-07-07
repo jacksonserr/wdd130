@@ -1,44 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-main {
+  }
+  
+  header, .grid, footer {
     max-width: 840px;
-}
-aside {
-    margin: 20em;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
-    padding: 1em;
-    background-color: lightslategray;
-    color:black;
-    text-align: center;
-}
-aside h2 {
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+  
+  main {
+    grid-column: 2;
+  }
+  
+  aside {
+    grid-column: 1;
+    grid-row: 1/3;
+  }
+  
+  nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  h1 {
+    border-bottom: 2px solid black;
+  }
+  
+  aside h2 {
     position: relative;
     top: 47px;
     left: 150px;
-}
-aside img {
+  }
+  
+  aside img {
     width: 200px;
     height: auto;
-}
-main img {
-   width: 150px;
-   height: auto;
-   float: right;
-}
-p { padding: 0;}
-footer {
+  }
+  
+  main img {
+    width: 150px;
+    height: auto;
+    float: right;
+  }
+  
+  p {
+    padding: 0;
+  }
+  
+  footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
-}
-/* Class Selectors */
-.box {
+  }
+  
+  .box {
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: lightsteelblue;
     color: darkblue;
-}
+  }

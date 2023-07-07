@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+  <h1>HTML and CSS Quiz</h1>
+  <form action="submit-quiz.php" method="POST">
+    <div>
+      <label for="q1">Question 1: Fill in the blank</label>
+      <input type="text" name="q1" id="q1" required>
+    </div>
+    <div>
+      <label for="q2">Question 2: Short answer</label>
+      <textarea name="q2" id="q2" rows="4" required></textarea>
+    </div>
+    <div>
+      <label for="q3">Question 3: Select an option</label>
+      <select name="q3" id="q3" required>
+        <option value="" selected disabled>Choose One...</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+    </div>
+    <div>
+      <label for="q4">Question 4: Enter a number</label>
+      <input type="number" name="q4" id="q4" required>
+    </div>
+    <button type="submit">Submit Quiz</button>
+  </form>
+</body>
+</html>

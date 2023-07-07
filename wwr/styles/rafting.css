@@ -61,6 +61,14 @@ p {
 section {
     padding: 20px;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+images/waterraft1.jpeg {
+    max-width: 100%;
+    height: auto;
+}
 
 .adventures {
     display: grid;
