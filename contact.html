@@ -47,21 +47,31 @@
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="purpose">Purpose of Message:</label>
-            <select id="purpose" name="purpose" required>
-                <option value="general">General Inquiry</option>
-                <option value="reservation">Reservation Question</option>
-                <option value="suggestion">Website Suggestion</option>
-            </select>
+            <fieldset>
+              <legend>Purpose of Message:</legend>
+              <div class="radio-option">
+                <input type="radio" id="general-inquiry" name="purpose" value="general" required>
+                <label for="general-inquiry">General Inquiry</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="reservation-question" name="purpose" value="reservation" required>
+                <label for="reservation-question">Reservation Question</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="website-suggestion" name="purpose" value="suggestion" required>
+                <label for="website-suggestion">Website Suggestion</label>
+              </div>
+            </fieldset>
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
             <input type="checkbox" id="subscribe" name="subscribe">
             <label for="subscribe">Please subscribe me to the monthly newsletter</label>
             <button type="submit">Submit</button>
-        </form>
+          </form>
     </main>
     <footer>
         <p>&copy; 2023 White Water Rafting Jackson Serr</p>
+        <img src="wwr/images/wireframe.png" alt="Wireframe">
         <nav class="sociallinks">
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook">
