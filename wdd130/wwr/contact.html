@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>About Us | Jackson Serr</title>
-    <meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding information, and a style guide for the course website project.">
+    <title>Contact Us | Jackson Serr</title>
+    <meta name="description" content="Contact White Water Rafting for any inquiries or questions.">
     <meta name="author" content="Jackson Serr">
     <link rel="stylesheet" href="wwr/styles/rafting.css">
 </head>
@@ -19,40 +19,59 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Man navigating the rapids">
-        </div>
-        <h1>White Water Rafting</h1>
-        <img src="images/happycustomer.jpeg" alt="Happy Customer">
-        <p>The company has a great purpose, mission, and creed. As well as a motto and etc. These are things we hold highly within our company.</p>
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventures">
-                <figure>
-                    <img src="images/waterraft1.jpeg" alt="First Water Raft Photo">
-                    <figcaption>Los Dientes del Diablo</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/waterraft2.jpeg" alt="Second Water Raft Photo">
-                    <figcaption>Big Mallard</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/waterraft3.jpeg" alt="Third Water Raft Photo">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/waterraft4.jpeg" alt="Fourth Water Raft Photo">
-                    <figcaption>Fun Day on Water</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/waterraft5.jpeg" alt="Fifth Water Raft Photo">
-                    <figcaption>The Big Day</figcaption>
-                </figure>
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p>Address: 886 Main St Rd, Riverville</p>
+            <p>Phone: 208-431-1234</p>
+            <p>Email: jacksonserr@rafting.com</p>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23028.41059551322!2d-111.8001051!3d43.823665250000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1688850538984!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
+        </div>
+        <div class="employee-profiles">
+            <figure>
+                <img src="/Users/jacksonserr/wdd130/images/employee1.jpeg" alt="Employee 1">
+                <figcaption>John Deer - Trip Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpeg" alt="Employee 2">
+                <figcaption>Bojack Dude - Customer Relations</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpeg" alt="Employee 3">
+                <figcaption>George Johnson - Tour Guide</figcaption>
+            </figure>
+        </div>
+        <form class="contact-form" action="submit-contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <fieldset>
+              <legend>Purpose of Message:</legend>
+              <div class="radio-option">
+                <input type="radio" id="general-inquiry" name="purpose" value="general" required>
+                <label for="general-inquiry">General Inquiry</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="reservation-question" name="purpose" value="reservation" required>
+                <label for="reservation-question">Reservation Question</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="website-suggestion" name="purpose" value="suggestion" required>
+                <label for="website-suggestion">Website Suggestion</label>
+              </div>
+            </fieldset>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            <button type="Subscribe!">Subscribe</button>
+          </form>
     </main>
     <footer>
         <p>&copy; 2023 White Water Rafting Jackson Serr</p>
+        <img src="wwr/images/wireframe.png" alt="Wireframe">
         <nav class="sociallinks">
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook">
